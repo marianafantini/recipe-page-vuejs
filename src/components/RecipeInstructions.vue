@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps(['instructions']);
 
-const instructions = props.instructions.sort((a, b) => a.step - b.step);
+const instructions = props.instructions;
 
 </script>
 
