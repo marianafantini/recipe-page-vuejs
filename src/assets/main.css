@@ -9,6 +9,8 @@
   --stone-900: #312E2C;
   --brown-800: #854632;
   --white: #FFFFFF;
+
+  background-color: var(--stone-100);
 }
 
 #app {
@@ -17,10 +19,26 @@
   padding: 2rem;
   font-weight: normal;
   font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .font-young {
   font-family: 'Young Serif', serif;
+}
+
+.color-rose-800 {
+  color: var(--rose-800);
+}
+
+.color-stone-900 {
+  color: var(--stone-900);
+}
+
+.color-stone-600 {
+  color: var(--stone-600);
 }
 
 a,

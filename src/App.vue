@@ -47,13 +47,24 @@ const recipe = {
 </script>
 
 <template>
-  <header>
-    <RecipeName :recipe="recipe"></RecipeName>
-  </header>
+  <div class="content-wrapper">
+    <header>
+      <RecipeName :recipe="recipe"></RecipeName>
+    </header>
 
-  <RecipeContent :recipe="recipe"></RecipeContent>
+    <RecipeContent :recipe="recipe"></RecipeContent>
+  </div>
 </template>
 
 <style scoped>
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 2rem;
+}
 
 </style>

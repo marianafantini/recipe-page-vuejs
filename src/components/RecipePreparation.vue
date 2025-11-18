@@ -5,17 +5,27 @@ const props = defineProps(['preparationTime']);
 
 <template>
   <div class="preparation-section">
-    <h2>Preparation time</h2>
-    <p><span class="title">Total:</span> {{ props.preparationTime.total }}</p>
-    <p><span class="title">Preparation:</span> {{ props.preparationTime.preparation }}</p>
-    <p><span class="title">Cooking:</span> {{ props.preparationTime.cooking }}</p>
+    <h2 class="color-rose-800">Preparation time</h2>
+    <ul>
+      <li class="color-stone-600"><span class="title">Total:</span> {{
+          props.preparationTime.total
+        }}
+      </li>
+      <li class="color-stone-600"><span class="title">Preparation:</span>
+        {{ props.preparationTime.preparation }}
+      </li>
+      <li class="color-stone-600"><span class="title">Cooking:</span>
+        {{ props.preparationTime.cooking }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <style scoped>
 .preparation-section {
-  padding: 1rem;
-  background-color: var(--rose-50)
+  padding: 1rem 2rem;
+  background-color: var(--rose-50);
+  border-radius: 0.75rem;
 }
 
 .title {

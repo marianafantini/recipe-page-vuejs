@@ -7,11 +7,19 @@ const props = defineProps(['recipe'])
   <img src="/public/images/image-omelette.jpeg"
        alt="Image of an omelette"
        class="recipe-image"  />
-  <h1 class="font-young">{{props.recipe.name}}</h1>
-  <p>{{props.recipe.description}}</p>
+  <h1 class="font-young color-stone-900">{{props.recipe.name}}</h1>
+  <p class="description color-stone-600">{{props.recipe.description}}</p>
 </template>
 
 <style scoped>
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.description {
+  font-size: 1rem;
+}
 
 .wrapper {
   display: flex;
@@ -19,9 +27,9 @@ const props = defineProps(['recipe'])
 }
 
 .recipe-image {
-  max-height: 15rem;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
+  border-radius: 2rem;
 }
 
 </style>
