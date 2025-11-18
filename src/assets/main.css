@@ -1,10 +1,26 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+  --rose-50: #FFF7FB;
+  --rose-800: #7A284E;
+  --stone-100: #F3E5D7;
+  --stone-150: #E3DDD7;
+  --stone-600: #5F564D;
+  --stone-900: #312E2C;
+  --brown-800: #854632;
+  --white: #FFFFFF;
+}
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-young {
+  font-family: 'Young Serif', serif;
 }
 
 a,
@@ -28,8 +44,6 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 }
