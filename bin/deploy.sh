@@ -19,6 +19,9 @@ echo "Will commit changes..."
 git add .
 git commit -m 'deploy'
 
+echo "Will set upstream"
+git branch --set-upstream-to origin/main
+
 echo "Will push changes..."
 git push -f git@github.com:marianafantini/recipe-page-vuejs.git main:gh-pages
 
