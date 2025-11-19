@@ -16,4 +16,4 @@ git add .
 git commit -m 'deploy'
 
 echo "Will push changes..."
-git subtree push -f --prefix dist origin gh-pages
+git subtree split --prefix dist origin gh-pages --force-with-lease
