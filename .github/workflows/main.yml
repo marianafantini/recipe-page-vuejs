@@ -7,6 +7,8 @@ jobs:
   deploy:
     name: Deploy github page
     runs-on: ubuntu-22.04
+    env:
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
     steps:
       - uses: actions/checkout@v5
       - name: deploy
