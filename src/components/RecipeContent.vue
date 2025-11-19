@@ -10,13 +10,19 @@ const props = defineProps(['recipe']);
 </script>
 
 <template>
-  <RecipePreparation :preparationTime="recipe.preparationTime"></RecipePreparation>
-  <RecipeIngredients :ingredients="recipe.ingredients"></RecipeIngredients>
-  <Divider></Divider>
-  <RecipeInstructions :instructions="recipe.instructions"></RecipeInstructions>
-  <RecipeNutrition :nutrition="recipe.nutrition"></RecipeNutrition>
+  <div class="content-wrapper">
+    <RecipePreparation :preparationTime="recipe.preparationTime"></RecipePreparation>
+    <RecipeIngredients :ingredients="recipe.ingredients"></RecipeIngredients>
+    <Divider></Divider>
+    <RecipeInstructions :instructions="recipe.instructions"></RecipeInstructions>
+    <Divider></Divider>
+    <RecipeNutrition :nutrition="recipe.nutrition"></RecipeNutrition>
+  </div>
 </template>
 
 <style scoped>
-
+.content-wrapper {
+  padding: 0 1rem;
+  margin-top: 0;
+}
 </style>

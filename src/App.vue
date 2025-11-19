@@ -47,7 +47,7 @@ const recipe = {
 </script>
 
 <template>
-  <div class="content-wrapper">
+  <div class="recipe-wrapper">
     <header>
       <RecipeName :recipe="recipe"></RecipeName>
     </header>
@@ -58,24 +58,31 @@ const recipe = {
 
 <style scoped>
 
-.content-wrapper {
+header {
+  width: 100%;
+}
+
+.recipe-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
   background-color: var(--white);
-  padding: 2rem;
-  border-radius: 2rem;
+  margin: 0;
 }
 
 @media (min-width: 48rem) {
-  .content-wrapper {
+  .recipe-wrapper {
     width: 85%;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem 0;
   }
 }
 
 @media (min-width: 60rem) {
-  .content-wrapper {
+  .recipe-wrapper {
     width: 60%;
+    padding: 2rem;
+    border-radius: 2rem;
   }
 }
 
