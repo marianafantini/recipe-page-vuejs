@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+    - main
+jobs:
+  deploy:
+    name: Deploy github page
+    runs-on: ubuntu-22.04
+    steps:
+    - name: npm install, build and test
+      run: ./bin/deploy.sh
