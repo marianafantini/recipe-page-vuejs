@@ -15,6 +15,10 @@ echo "Will commit changes..."
 git add .
 git commit -m 'deploy'
 
+echo "Will update gh-pages branch"
+git checkout gh-pages
+git pull
+git checkout -
+
 echo "Will push changes..."
-git subtree pull --prefix dist origin gh-pages
 git subtree push --prefix dist origin gh-pages
