@@ -18,6 +18,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push git@github.com:marianafantini/recipe-page-vuejs.git main:gh-pages
+git push -f git@github.com:marianafantini/recipe-page-vuejs.git main:gh-pages
 
 cd -
