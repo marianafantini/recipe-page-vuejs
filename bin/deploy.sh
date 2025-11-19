@@ -21,4 +21,4 @@ git pull --rebase
 git checkout -
 
 echo "Will push changes..."
-git subtree push --prefix dist origin gh-pages --force
+git push origin `git subtree split --prefix dist gh-pages`:gh-pages --force
