@@ -7,6 +7,9 @@ echo "Will configure user for github..."
 git config --global user.email "mariana.fantini@gmail.com"
 git config --global user.name "Mariana Fantini"
 
+echo "Will install the app..."
+npm install
+
 echo "Will build the app..."
 npm run build
 
