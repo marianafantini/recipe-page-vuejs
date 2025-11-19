@@ -15,5 +15,8 @@ echo "Will commit changes..."
 git add .
 git commit -m 'deploy'
 
+echo "Will fetch all..."
+git fetch --all
+
 echo "Will push changes..."
-git subtree split --prefix dist origin gh-pages
+git subtree push --prefix dist origin gh-pages
