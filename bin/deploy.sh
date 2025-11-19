@@ -9,6 +9,7 @@ git config --global user.name "Mariana Fantini"
 
 echo "Will create gh-pages branch"
 git checkout -b gh-pages
+git checkout -
 
 echo "Will build the app..."
 npm install
