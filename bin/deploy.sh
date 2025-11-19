@@ -13,12 +13,4 @@ git checkout -
 
 echo "Will build the app..."
 npm install
-npm run build
-
-echo "Will commit changes..."
-git add .
-git commit -m 'deploy'
-
-echo "Will push changes..."
-git subtree push --branch gh-pages --prefix dist/ subtree_origin main
-
+npm run deploy
