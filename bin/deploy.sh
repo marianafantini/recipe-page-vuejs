@@ -16,8 +16,7 @@ git config --global user.email "mariana.fantini@gmail.com"
 git config --global user.name "Mariana Fantini"
 
 echo "Will commit changes..."
-git init
-git add -A
+git add .
 git commit -m 'deploy'
 
 echo "Will push changes..."
