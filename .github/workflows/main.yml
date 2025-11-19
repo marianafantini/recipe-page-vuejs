@@ -8,8 +8,9 @@ jobs:
     name: Deploy github page
     runs-on: ubuntu-22.04
     steps:
-    - name: deploy
-      run: |
-        #!/usr/bin/env sh
-        ls -la
-        ls ../bin
+      - uses: actions/checkout@v5
+      - name: deploy
+        run: |
+          #!/usr/bin/env sh
+          ls -la
+          ls ../bin
