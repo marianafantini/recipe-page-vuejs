@@ -20,5 +20,5 @@ git add .
 git commit -m 'deploy'
 
 echo "Will push changes..."
-git subtree push --branch gh-pages --prefix dist/
+git subtree push --branch gh-pages --prefix dist/ subtree_origin main
 
