@@ -49,10 +49,14 @@ const recipe = {
 <template>
   <div class="recipe-wrapper">
     <header>
-      <RecipeName :recipe="recipe"></RecipeName>
+      <main>
+        <RecipeName :recipe="recipe"></RecipeName>
+      </main>
     </header>
 
-    <RecipeContent :recipe="recipe"></RecipeContent>
+    <section>
+      <RecipeContent :recipe="recipe"></RecipeContent>
+    </section>
   </div>
 </template>
 
