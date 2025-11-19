@@ -3,13 +3,9 @@
 # abort on errors
 set -e
 
+echo "Will build the app..."
 npm install
-
-# build
 npm run build
-
-# navigate into the build output directory
-cd dist
 
 echo "Will configure user for github..."
 git config --global user.email "mariana.fantini@gmail.com"
@@ -19,10 +15,5 @@ echo "Will commit changes..."
 git add .
 git commit -m 'deploy'
 
-echo "Will set upstream"
-#git branch --set-upstream-to origin/main
-
 echo "Will push changes..."
 git subtree push --prefix dist origin gh-pages
-
-cd -
