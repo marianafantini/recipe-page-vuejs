@@ -11,12 +11,12 @@ echo "Will configure user for github..."
 git config --global user.email "mariana.fantini@gmail.com"
 git config --global user.name "Mariana Fantini"
 
+echo "Will create gh-pages branch"
+git checkout -b gh-pages
+
 echo "Will commit changes..."
 git add .
 git commit -m 'deploy'
-
-echo "Will create gh-pages branch"
-git checkout -b gh-pages
 
 echo "Will push changes..."
 git subtree split --branch gh-pages --prefix dist/
