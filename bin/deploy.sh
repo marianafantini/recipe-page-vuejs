@@ -8,6 +8,8 @@ npm install
 # build
 npm run build
 
+ls -la
+
 # navigate into the build output directory
 cd dist
 
