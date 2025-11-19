@@ -12,5 +12,4 @@ jobs:
       - name: deploy
         run: |
           #!/usr/bin/env sh
-          ls -la
-          ls ../bin
+          ./bin/deploy.sh
