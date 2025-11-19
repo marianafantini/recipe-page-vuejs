@@ -5,7 +5,7 @@ const props = defineProps(['preparationTime']);
 
 <template>
   <div class="preparation-section">
-    <h2 class="color-rose-800">Preparation time</h2>
+    <h3 class="color-rose-800">Preparation time</h3>
     <ul>
       <li class="color-stone-600"><span class="title">Total:</span> {{
           props.preparationTime.total

@@ -29,6 +29,18 @@
   font-family: 'Young Serif', serif;
 }
 
+h2 {
+  font-size: 1.75rem
+}
+
+h3 {
+  font-size: 1.25rem
+}
+
+.color-brown-800 {
+  color: var(--brown-800);
+}
+
 .color-rose-800 {
   color: var(--rose-800);
 }
@@ -64,4 +76,14 @@ a,
   #app {
     padding: 0 2rem;
   }
+}
+
+li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+li::marker  {
+  color: var(--rose-800);
+  font-weight: bold;
 }

@@ -4,12 +4,12 @@ const props = defineProps(['nutrition']);
 
 <template>
   <div class="preparation-section">
-    <h2>Nutrition</h2>
-    <p>The table below shows nutritional values per serving without the additional fillings.</p>
+    <h2 class="font-young color-brown-800">Nutrition</h2>
+    <p class="color-stone-600">The table below shows nutritional values per serving without the additional fillings.</p>
 
-    <table class="nutrition-table">
+    <table class="nutrition-table color-stone-600">
       <tbody>
-      <tr>
+      <tr class="border-bottom-grey">
         <td>
           Calories
         </td>
@@ -17,7 +17,7 @@ const props = defineProps(['nutrition']);
           {{ props.nutrition.calories }}kcal
         </td>
       </tr>
-      <tr>
+      <tr class="border-bottom-grey">
         <td>
           Carbs
         </td>
@@ -25,7 +25,7 @@ const props = defineProps(['nutrition']);
           {{ props.nutrition.carbs }}g
         </td>
       </tr>
-      <tr>
+      <tr class="border-bottom-grey">
         <td>
           Protein
         </td>
@@ -50,4 +50,27 @@ const props = defineProps(['nutrition']);
 .nutrition-table {
   width: 100%;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table tr {
+  line-height: 2.5rem;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+
+table td:first-child {
+  padding-left: 2rem;
+}
+
+table td:last-child {
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
 </style>
