@@ -10,16 +10,9 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout main branch
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
-          ref: main
-          path: main
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
+          fetch-depth: 0
       - name: deploy
         run: |
           #!/usr/bin/env sh
