@@ -2,13 +2,13 @@ on:
   push:
     branches:
     - main
+    - create-deploy-script
 jobs:
   deploy:
     name: Deploy github page
     runs-on: ubuntu-22.04
     steps:
-    - name: npm install, build and test
+    - name: deploy
       run: |
         #!/usr/bin/env sh
-        set -e
-        ls -la
+        ls bin/deploy.sh
