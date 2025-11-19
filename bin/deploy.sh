@@ -11,6 +11,9 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+git config --global mariana.fantini@gmail.com
+git config --global user.name "Mariana Fantini"
+
 git init
 git add -A
 git commit -m 'deploy'
