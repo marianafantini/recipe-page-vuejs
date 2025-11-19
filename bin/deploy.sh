@@ -16,7 +16,7 @@ git add .
 git commit -m 'deploy'
 
 echo "Will fetch all..."
-git fetch --all
+git pull origin/gh-pages
 
 echo "Will push changes..."
 git subtree push --prefix dist origin gh-pages
