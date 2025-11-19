@@ -23,7 +23,7 @@ const props = defineProps(['preparationTime']);
 
 <style scoped>
 .preparation-section {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: var(--rose-50);
   border-radius: 0.75rem;
 }
