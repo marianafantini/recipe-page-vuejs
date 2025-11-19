@@ -17,7 +17,7 @@ git commit -m 'deploy'
 
 echo "Will update gh-pages branch"
 git checkout gh-pages
-git pull
+git pull --rebase
 git checkout -
 
 echo "Will push changes..."
