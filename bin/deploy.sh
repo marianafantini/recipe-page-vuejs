@@ -9,4 +9,6 @@ git config --global user.name "Mariana Fantini"
 
 echo "Will build the app..."
 git subtree pull --prefix dist origin gh-pages
-npm run deploy
+npm run build
+git push origin `git subtree split --prefix dist gh-pages`:gh-pages --force
+
